@@ -15,6 +15,8 @@
 [inchpages]: http://inch-ci.org/github/sferik/twitter
 
 A Ruby interface to the Twitter API.
+## Modifications by mitchlanglois
+  - Make `Twitter::REST::Tweets#upload` into a public method instead of private. Doing this allows us to upload media without tweeting at the same time.
 
 ## Installation
     gem install twitter
