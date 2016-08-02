@@ -321,8 +321,6 @@ module Twitter
         end.compact
       end
 
-    private
-
       # Uploads images and videos. Videos require multiple requests and uploads in chunks of 5 Megabytes.
       # The only supported video format is mp4.
       #
@@ -353,6 +351,8 @@ module Twitter
                                      command: 'FINALIZE', media_id: init[:media_id]).perform
         end
       end
+
+    private
 
       def array_wrap(object)
         if object.respond_to?(:to_ary)
