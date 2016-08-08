@@ -17,6 +17,7 @@
 A Ruby interface to the Twitter API.
 ## Modifications by mitchlanglois
   - Make `Twitter::REST::Tweets#upload` into a public method instead of private. Doing this allows us to upload media without tweeting at the same time.
+  - Add `media_category=nil` arg to `Twitter::REST::Tweets#upload`. It is required that media_category be set to `amplify_video` when uploading a video for use in the Ads API.
 
 ## Installation
     gem install twitter
